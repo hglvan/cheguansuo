@@ -12,7 +12,7 @@ var catid ='';
     $(".itemqr-searchbtn").on("click", function(){
         var input = $(".itemqr-searchinput").val();
         let fdrId =location.search.includes('fdrid') ? location.search.split('=')[1] : '';
-        window.location.href = "../index/itemlist.html?catDes=" + loadObject("carInfo").catDesc + "&accessoryName=" + input+'&fdrId='+fdrId;
+        window.location.href = "../index/itemlist.html?accessoryName=" + input+'&fdrId='+fdrId;
     })
 })()
 
