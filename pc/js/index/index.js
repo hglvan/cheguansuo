@@ -11,8 +11,8 @@ var carData;
         }
 
      }
-     window.parent.getIndexList(window.sessionStorage.getItem("id"))
-    //  getIndexList();
+    //  window.parent.getIndexList(window.sessionStorage.getItem("id"))
+    getIndexList(window.sessionStorage.getItem("id"));
     clearCookie()
     //判断登录
     if(window.sessionStorage.getItem("isLogin") == 1){       
@@ -280,7 +280,6 @@ function chatLogin(acount, passWord){
 
 //获取首页资讯
 function getIndexList(name){
-    console.log('来了')
     //document.cookie = "JSESSIONID=" + window.sessionStorage.getItem("sid");
     if(name)window.sessionStorage.setItem("id",name);
 
